@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     githubUrl: 'https://github.com/laura-weka',
 
     // Enlace a tu perfil público de LinkedIn
-    linkedinUrl: 'https://linkedin.com',
+    linkedinUrl: 'https://www.linkedin.com/in/lauramarinbarrio',
 
     // Enlaces a los repositorios o demos de tus proyectos.
     // Deja en null o en '#' si aún están en desarrollo; el sistema

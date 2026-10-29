@@ -59,7 +59,7 @@ const USER_CONFIG = {
   githubUrl: 'https://github.com/tu-usuario',
 
   // El enlace a tu perfil de LinkedIn
-  linkedinUrl: 'https://linkedin.com/in/tu-perfil',
+  linkedinUrl: 'https://www.linkedin.com/in/lauramarinbarrio',
 
   // Repositorios de tus proyectos (cuando los tengas listos):
   projects: {
