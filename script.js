@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   */
   const USER_CONFIG = {
     // Dirección de correo electrónico de contacto
-    email: 'contacto@lauramarin.dev',
+    email: 'grupomala@hotmail.com',
 
     // Enlace a tu perfil público de GitHub
     githubUrl: 'https://github.com/laura-weka',
