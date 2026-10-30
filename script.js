@@ -283,19 +283,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalBadgeText) modalBadgeText.textContent = data.badge;
     if (modalExtraNote) modalExtraNote.textContent = data.note;
 
-    // Ajustar estilo del badge
+    // Ajustar estilo del badge reutilizando las clases de estado de style.css
     if (modalBadge) {
-      modalBadge.className = 'modal-badge';
-      if (data.badgeType === 'in-production') {
-        modalBadge.style.backgroundColor = '#ecfdf5';
-        modalBadge.style.color = '#047857';
-      } else if (data.badgeType === 'in-progress-blue') {
-        modalBadge.style.backgroundColor = '#e0f2fe';
-        modalBadge.style.color = '#0369a1';
-      } else {
-        modalBadge.style.backgroundColor = '#fff7ed';
-        modalBadge.style.color = '#c2410c';
-      }
+      modalBadge.className = `modal-badge status-badge ${data.badgeType}`;
     }
 
     // Renderizar tags de tecnologías
