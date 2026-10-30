@@ -3,98 +3,109 @@
  * PORTFOLIO PROFESIONAL - LAURA MARÍN BARRIO
  * Archivo: script.js
  * 
- * Funcionalidades interactivas, navegación fluida, gestión de enlaces y 
- * configuración centralizada para personalización rápida.
+ * Funcionalidades interactivas, configuración centralizada, modal de proyectos
+ * con ficha técnica detallada, scrollspy, navegación y copiado rápido.
  * ============================================================================
  */
 
-// Ejecutar cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
 
   /* --------------------------------------------------------------------------
-     1. CONFIGURACIÓN CENTRALIZADA (FÁCILMENTE EDITABLE POR LAURA)
-     --------------------------------------------------------------------------
-     Modifica los siguientes valores con tus datos reales cuando desees 
-     actualizar tu correo, redes sociales o repositorios de proyectos.
-  */
+     1. CONFIGURACIÓN CENTRALIZADA
+     -------------------------------------------------------------------------- */
   const USER_CONFIG = {
-    // Dirección de correo electrónico de contacto
+    name: 'Laura Marín Barrio',
     email: 'grupomala@hotmail.com',
-
-    // Enlace a tu perfil público de GitHub
+    phone: '650 411 664',
+    whatsappUrl: 'https://wa.me/34650411664',
     githubUrl: 'https://github.com/laura-weka',
-
-    // Enlace a tu perfil público de LinkedIn
     linkedinUrl: 'https://www.linkedin.com/in/lauramarinbarrio',
+    location: 'Vejer de la Frontera, Cádiz',
 
-    // Enlaces a los repositorios o demos de tus proyectos.
-    // Deja en null o en '#' si aún están en desarrollo; el sistema
-    // mostrará automáticamente la ventana explicativa "En desarrollo".
+    // Fichas técnicas completas de proyectos
     projects: {
       'reservas': {
-        name: 'Sistema digital de reservas deportivas',
-        repoUrl: null, // Ejemplo futuro: 'https://github.com/tu-usuario/reservas-deportivas'
-        description: 'Proyecto para gestionar reservas de pistas e instalaciones deportivas con calendario interactivo y control de disponibilidad.'
+        name: 'Sistema Digital de Reservas Deportivas',
+        badge: 'Aplicado en negocio real',
+        badgeType: 'in-production',
+        tech: ['Google Sheets', 'Formularios Web', 'n8n', 'Google Apps Script', 'Flutter / Firebase'],
+        description: 'Solución integral desarrollada para gestionar reservas de pistas e instalaciones en el Centro Deportivo Liceo (San Fernando, Cádiz). Centraliza la selección de fechas, horarios y pistas disponibles, automatiza la asignación y envía confirmaciones instantáneas, eliminando solapamientos y llamadas telefónicas innecesarias.',
+        note: 'Solución operativa en producción, con versión móvil avanzada actualmente en desarrollo con Flutter y Firebase.'
       },
       'inventario': {
-        name: 'Gestión de inventario para comercio',
-        repoUrl: null, // Ejemplo futuro: 'https://github.com/tu-usuario/inventario-comercio'
-        description: 'Digitalización del stock, control de existencias, seguimiento de pedidos y automatización con IA y hojas de cálculo.'
+        name: 'Gestión de Inventario y Ventas para Comercio',
+        badge: 'Prototipo funcional',
+        badgeType: 'in-progress',
+        tech: ['Inteligencia Artificial', 'Google Sheets', 'Automatización', 'Visión por IA'],
+        description: 'Proyecto de digitalización para tiendas de alimentación y comercio minorista. Permite el control continuo de existencias, seguimiento de compras, alertas por rotura de stock, sugerencias automáticas de pedidos a proveedores e integración con modelos de visión por IA para procesar albaranes y facturas escaneadas.',
+        note: 'Diseñado a partir de la experiencia directa en gestión de supermercado y comercio minorista.'
+      },
+      'crm': {
+        name: 'Flujos de Clientes y CRM Comercial',
+        badge: 'Implementado',
+        badgeType: 'in-production',
+        tech: ['WhatsApp Business', 'CRM', 'Google Workspace', 'Fidelización', 'Apps Script'],
+        description: 'Estructuración de flujos comerciales para captura, seguimiento y fidelización de clientes. Integra respuestas rápidas y catálogos en WhatsApp Business, organización de bases de datos centralizadas y seguimiento de incidencias para asegurar una atención ágil.',
+        note: 'Metodología aplicada para optimizar la relación comercial y la retención en negocios de servicios.'
+      },
+      'bi': {
+        name: 'Cuadros de Mando y Analítica con Power BI',
+        badge: 'En desarrollo activo',
+        badgeType: 'in-progress-blue',
+        tech: ['Power BI', 'Power Query', 'DAX', 'Excel Avanzado', 'KPIs de Negocio'],
+        description: 'Diseño de paneles interactivos de Business Intelligence para visualizar el rendimiento económico, horas punta de ocupación, volumen de cobros y evolución de ventas. Facilita la toma de decisiones basada en métricas consolidadas.',
+        note: 'Proyecto vinculado a la especialización en Business Intelligence y análisis de datos.'
       },
       'mievento': {
         name: 'Mi Evento en Casa',
-        repoUrl: null, // Ejemplo futuro: 'https://github.com/tu-usuario/mi-evento-en-casa'
-        description: 'Aplicación web asistida por IA para planificar eventos, recetas, cálculo de ingredientes y gestión de menús.'
+        badge: 'En desarrollo',
+        badgeType: 'in-progress',
+        tech: ['Desarrollo Web Full Stack', 'JavaScript', 'Inteligencia Artificial', 'CSS3 Moderno'],
+        description: 'Aplicación web orientada a la planificación de celebraciones, menús y eventos privados. Incluye buscador inteligente de recetas, recomendación y escalado de ingredientes por número de comensales y generación automática de la lista de compras asistida por IA.',
+        note: 'Proyecto formativo del itinerario Full Stack en ConquerX.'
+      },
+      'n8n': {
+        name: 'Automatización de Tareas Administrativas con n8n',
+        badge: 'Automatización Activa',
+        badgeType: 'in-production',
+        tech: ['n8n', 'IA Generativa', 'Google Apps Script', 'Webhooks', 'Clasificación de Correo'],
+        description: 'Conjunto de flujos de automatización que conectan aplicaciones en la nube para procesar formularios, generar resúmenes automáticos con IA, clasificar peticiones entrantes y emitir alertas inmediatas sin intervención manual.',
+        note: 'Flujos orientados al ahorro de tiempo en tareas administrativas repetitivas de pymes.'
       }
     }
   };
 
   /* --------------------------------------------------------------------------
-     2. APLICAR CONFIGURACIÓN A LA INTERFAZ
+     2. APLICAR CONFIGURACIÓN DINÁMICA
      -------------------------------------------------------------------------- */
-  function applyUserConfig() {
-    // 1. Configurar Correo
+  function applyConfig() {
+    // Correo
     const displayEmail = document.getElementById('display-email');
     const btnMailLink = document.getElementById('btn-mail-link');
-    if (displayEmail && USER_CONFIG.email) {
-      displayEmail.textContent = USER_CONFIG.email;
-    }
-    if (btnMailLink && USER_CONFIG.email) {
-      btnMailLink.href = `mailto:${USER_CONFIG.email}?subject=Contacto%20desde%20tu%20Portfolio%20Profesional`;
-    }
+    if (displayEmail) displayEmail.textContent = USER_CONFIG.email;
+    if (btnMailLink) btnMailLink.href = `mailto:${USER_CONFIG.email}?subject=Contacto%20profesional%20desde%20tu%20Portfolio`;
 
-    // 2. Configurar GitHub
-    const displayGithub = document.getElementById('display-github');
-    const linkGithub = document.getElementById('link-github');
-    if (USER_CONFIG.githubUrl) {
-      if (linkGithub) linkGithub.href = USER_CONFIG.githubUrl;
-      if (displayGithub) {
-        // Mostrar formato legible sin el https://
-        displayGithub.textContent = USER_CONFIG.githubUrl.replace(/^https?:\/\//, '');
-      }
-    }
-
-    // 3. Configurar LinkedIn
+    // LinkedIn
     const displayLinkedin = document.getElementById('display-linkedin');
     const linkLinkedin = document.getElementById('link-linkedin');
-    if (USER_CONFIG.linkedinUrl) {
-      if (linkLinkedin) linkLinkedin.href = USER_CONFIG.linkedinUrl;
-      if (displayLinkedin) {
-        displayLinkedin.textContent = USER_CONFIG.linkedinUrl.replace(/^https?:\/\//, '');
-      }
-    }
+    if (displayLinkedin) displayLinkedin.textContent = USER_CONFIG.linkedinUrl.replace(/^https?:\/\/(www\.)?/, '');
+    if (linkLinkedin) linkLinkedin.href = USER_CONFIG.linkedinUrl;
 
-    // 4. Año actual dinámico en el pie de página
+    // GitHub
+    const displayGithub = document.getElementById('display-github');
+    const linkGithub = document.getElementById('link-github');
+    if (displayGithub) displayGithub.textContent = USER_CONFIG.githubUrl.replace(/^https?:\/\//, '');
+    if (linkGithub) linkGithub.href = USER_CONFIG.githubUrl;
+
+    // Año actual en footer
     const currentYearSpan = document.getElementById('current-year');
-    if (currentYearSpan) {
-      currentYearSpan.textContent = new Date().getFullYear();
-    }
+    if (currentYearSpan) currentYearSpan.textContent = new Date().getFullYear();
   }
 
-  applyUserConfig();
+  applyConfig();
 
   /* --------------------------------------------------------------------------
-     3. NAVEGACIÓN MÓVIL (MENÚ HAMBURGUESA)
+     3. NAVEGACIÓN MÓVIL
      -------------------------------------------------------------------------- */
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
@@ -107,7 +118,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navToggle.setAttribute('aria-expanded', String(isOpen));
     });
 
-    // Cerrar menú al hacer clic en cualquier enlace
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         if (navMenu.classList.contains('open')) {
@@ -118,7 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Cerrar al hacer clic fuera del menú
     document.addEventListener('click', (event) => {
       if (navMenu.classList.contains('open') && 
           !navMenu.contains(event.target) && 
@@ -131,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --------------------------------------------------------------------------
-     4. SOMBRA Y EFECTO EN NAVBAR AL HACER SCROLL
+     4. NAVBAR SCROLL EFFECT & VOLVER ARRIBA
      -------------------------------------------------------------------------- */
   const navbar = document.getElementById('navbar');
   const scrollTopBtn = document.getElementById('scroll-top-btn');
@@ -139,18 +148,16 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     const scrollY = window.pageYOffset || document.documentElement.scrollTop;
 
-    // Sombra en navbar
     if (navbar) {
-      if (scrollY > 30) {
+      if (scrollY > 25) {
         navbar.classList.add('scrolled');
       } else {
         navbar.classList.remove('scrolled');
       }
     }
 
-    // Visibilidad del botón "Volver arriba"
     if (scrollTopBtn) {
-      if (scrollY > 400) {
+      if (scrollY > 380) {
         scrollTopBtn.classList.add('visible');
       } else {
         scrollTopBtn.classList.remove('visible');
@@ -158,7 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Acción de volver arriba suavemente
   if (scrollTopBtn) {
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({
@@ -169,12 +175,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --------------------------------------------------------------------------
-     5. SCROLLSPY (INDICADOR DE SECCIÓN ACTIVA EN NAVBAR)
+     5. SCROLLSPY (SECCIÓN ACTIVA EN NAVBAR)
      -------------------------------------------------------------------------- */
   const sections = document.querySelectorAll('section[id]');
 
   function updateActiveNavLink() {
-    const scrollPosition = window.pageYOffset + 120;
+    const scrollPosition = window.pageYOffset + 130;
 
     sections.forEach(currentSection => {
       const sectionHeight = currentSection.offsetHeight;
@@ -195,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateActiveNavLink();
 
   /* --------------------------------------------------------------------------
-     6. BOTÓN "COPIAR CORREO" CON TOAST FEEDBACK
+     6. BOTÓN COPIAR CORREO CON TOAST
      -------------------------------------------------------------------------- */
   const btnCopyEmail = document.getElementById('btn-copy-email');
   const copyBtnText = document.getElementById('copy-btn-text');
@@ -208,7 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (navigator.clipboard && window.isSecureContext) {
           await navigator.clipboard.writeText(emailToCopy);
         } else {
-          // Fallback para navegadores antiguos o entornos no seguros
           const tempInput = document.createElement('input');
           tempInput.value = emailToCopy;
           document.body.appendChild(tempInput);
@@ -217,23 +222,22 @@ document.addEventListener('DOMContentLoaded', () => {
           document.body.removeChild(tempInput);
         }
 
-        // Feedback en el botón
         if (copyBtnText) copyBtnText.textContent = '¡Copiado!';
-        showToast('Dirección de correo copiada al portapapeles');
+        showToast('Correo electrónico copiado al portapapeles');
 
         setTimeout(() => {
           if (copyBtnText) copyBtnText.textContent = 'Copiar';
-        }, 2500);
+        }, 2400);
 
       } catch (err) {
-        console.error('No se pudo copiar el texto:', err);
+        console.error('Error al copiar correo:', err);
         showToast(`Correo: ${emailToCopy}`);
       }
     });
   }
 
   /* --------------------------------------------------------------------------
-     7. TOAST NOTIFICATION
+     7. NOTIFICACIÓN TOAST
      -------------------------------------------------------------------------- */
   const toast = document.getElementById('toast');
   const toastMessage = document.getElementById('toast-message');
@@ -241,18 +245,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showToast(message) {
     if (!toast) return;
-
-    if (toastMessage) {
-      toastMessage.textContent = message;
-    }
+    if (toastMessage) toastMessage.textContent = message;
 
     toast.classList.add('show');
     toast.setAttribute('aria-hidden', 'false');
 
-    if (toastTimeout) {
-      clearTimeout(toastTimeout);
-    }
-
+    if (toastTimeout) clearTimeout(toastTimeout);
     toastTimeout = setTimeout(() => {
       toast.classList.remove('show');
       toast.setAttribute('aria-hidden', 'true');
@@ -260,30 +258,66 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* --------------------------------------------------------------------------
-     8. VENTANA MODAL PARA PROYECTOS EN DESARROLLO
+     8. VENTANA MODAL DE DETALLE DE PROYECTO
      -------------------------------------------------------------------------- */
   const projectModal = document.getElementById('project-modal');
   const modalClose = document.getElementById('modal-close');
   const modalCloseBtn = document.getElementById('modal-close-btn');
   const modalTitle = document.getElementById('modal-title');
   const modalDesc = document.getElementById('modal-desc');
+  const modalBadge = document.getElementById('modal-badge');
+  const modalBadgeText = document.getElementById('modal-badge-text');
+  const modalTechStack = document.getElementById('modal-tech-stack');
+  const modalExtraNote = document.getElementById('modal-extra-note');
+  const modalContactBtn = document.getElementById('modal-contact-btn');
   const projectButtons = document.querySelectorAll('.btn-project');
 
-  function openProjectModal(projectName, projectDetails) {
+  function openProjectModal(projectId) {
     if (!projectModal) return;
 
-    if (modalTitle) {
-      modalTitle.textContent = projectName;
+    const data = USER_CONFIG.projects[projectId];
+    if (!data) return;
+
+    if (modalTitle) modalTitle.textContent = data.name;
+    if (modalDesc) modalDesc.textContent = data.description;
+    if (modalBadgeText) modalBadgeText.textContent = data.badge;
+    if (modalExtraNote) modalExtraNote.textContent = data.note;
+
+    // Ajustar estilo del badge
+    if (modalBadge) {
+      modalBadge.className = 'modal-badge';
+      if (data.badgeType === 'in-production') {
+        modalBadge.style.backgroundColor = '#ecfdf5';
+        modalBadge.style.color = '#047857';
+      } else if (data.badgeType === 'in-progress-blue') {
+        modalBadge.style.backgroundColor = '#e0f2fe';
+        modalBadge.style.color = '#0369a1';
+      } else {
+        modalBadge.style.backgroundColor = '#fff7ed';
+        modalBadge.style.color = '#c2410c';
+      }
     }
 
-    if (modalDesc && projectDetails) {
-      modalDesc.textContent = projectDetails.description || 
-        'Este proyecto se encuentra actualmente en desarrollo y preparación para su publicación en GitHub.';
+    // Renderizar tags de tecnologías
+    if (modalTechStack) {
+      modalTechStack.innerHTML = '';
+      data.tech.forEach(techItem => {
+        const tag = document.createElement('span');
+        tag.className = 'tech-tag';
+        tag.textContent = techItem;
+        modalTechStack.appendChild(tag);
+      });
+    }
+
+    // Botón de consulta
+    if (modalContactBtn) {
+      modalContactBtn.href = `https://wa.me/34650411664?text=Hola%20Laura,%20me%20interesa%20conocer%20m%C3%A1s%20detalles%20sobre%20tu%20proyecto:%20${encodeURIComponent(data.name)}`;
+      modalContactBtn.target = '_blank';
     }
 
     projectModal.classList.add('active');
     projectModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden'; // Evita scroll de fondo
+    document.body.style.overflow = 'hidden';
   }
 
   function closeProjectModal() {
@@ -296,34 +330,20 @@ document.addEventListener('DOMContentLoaded', () => {
   projectButtons.forEach(button => {
     button.addEventListener('click', (event) => {
       event.preventDefault();
-
       const projectId = button.getAttribute('data-project-id');
-      const projectData = USER_CONFIG.projects[projectId];
-      const projectName = button.getAttribute('data-project-name') || (projectData ? projectData.name : 'Proyecto');
-
-      // Si existe una URL configurada en USER_CONFIG, abrir el repositorio
-      if (projectData && projectData.repoUrl && projectData.repoUrl !== '#' && projectData.repoUrl !== '') {
-        window.open(projectData.repoUrl, '_blank', 'noopener,noreferrer');
-      } else {
-        // Si aún no hay URL, abrir el modal informativo
-        openProjectModal(projectName, projectData);
-      }
+      openProjectModal(projectId);
     });
   });
 
   if (modalClose) modalClose.addEventListener('click', closeProjectModal);
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeProjectModal);
 
-  // Cerrar modal al hacer clic en el fondo oscuro
   if (projectModal) {
     projectModal.addEventListener('click', (event) => {
-      if (event.target === projectModal) {
-        closeProjectModal();
-      }
+      if (event.target === projectModal) closeProjectModal();
     });
   }
 
-  // Cerrar modal con la tecla ESC
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && projectModal && projectModal.classList.contains('active')) {
       closeProjectModal();
@@ -331,4 +351,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
-

@@ -1,25 +1,28 @@
 # Portfolio Profesional | Laura Marín Barrio
 
-Sitio web personal y portafolio profesional desarrollado con **HTML5, CSS3 y JavaScript**, diseñado con una estética moderna, limpia y tecnológica. 
+Sitio web personal y portafolio profesional desarrollado con **HTML5 semántico, CSS3 moderno y JavaScript vanilla**, diseñado con una estética ejecutiva, limpia y de alto impacto.
 
-Este proyecto está concebido para presentar la trayectoria profesional de **Laura Marín Barrio**, combinando su amplia experiencia en **gestión empresarial** con sus competencias técnicas en **Inteligencia Artificial, Desarrollo Web, Automatización y Ciberseguridad**, con el objetivo de impulsar nuevas oportunidades laborales en el sector digital.
+Presenta la trayectoria profesional de **Laura Marín Barrio**, unificando su sólida experiencia en **dirección y gestión de operaciones de pymes** con sus competencias tecnológicas en **Inteligencia Artificial, Automatización de Procesos (n8n, Apps Script), Análisis de Datos (Power BI, Excel) y Desarrollo Web Full Stack**.
 
 ---
 
-## 🌟 Características Principales
+## 🌟 Propuesta de Valor y Especialidad
 
-- **Diseño Moderno y Profesional:** Paleta de colores basada en azul pizarra oscuro y turquesa/cian tecnológico, con fondo claro y tipografía legible (*Plus Jakarta Sans*).
-- **100% Responsive:** Adaptación fluida a dispositivos móviles, tabletas, portátiles y pantallas de escritorio.
-- **Sin Dependencias Externas Complejas:** Funciona de inmediato abriendo el archivo `index.html` en cualquier navegador web moderno, sin necesidad de instalar `npm`, Node.js ni empaquetadores.
-- **Preparado para GitHub Pages:** Estructura de archivos estáticos lista para publicar de forma gratuita en GitHub.
-- **Interactividad Intuitiva:**
-  - Menú de navegación fijo con efecto translúcido (*backdrop blur*) y menú hamburguesa en móviles.
-  - Navegación suave (*smooth scrolling*) y resaltado automático de la sección visible (*ScrollSpy*).
-  - Tarjetas de habilidades estructuradas por áreas funcionales.
-  - Tarjetas de proyectos con distintivo dinámico **"En desarrollo"** y ventana modal informativa.
-  - Copiado rápido de la dirección de correo al portapapeles con confirmación visual (*toast notification*).
-  - Botón flotante para volver arriba con suavidad.
-- **Accesibilidad y Semántica:** Estructura HTML5 semántica (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`) con atributos ARIA y soporte para reducción de movimiento (`prefers-reduced-motion`).
+- **Gestión de Operaciones Reales:** Más de 8 años en dirección y gestión de operaciones en el Centro Deportivo Liceo (San Fernando, Cádiz), Supermercado Los Chiclaneros (Vejer, Cádiz), hostelería y comercios.
+- **Automatización & IA para PYMES:** Implementación de flujos de trabajo con n8n, Google Apps Script, ChatGPT, Claude y Antigravity que ahorran horas de tareas administrativas y eliminan errores.
+- **Formación Superior Oficial:**
+  - Máster de Formación Permanente en Inteligencia Artificial (TECH Universidad Tecnológica · 60 ECTS).
+  - MBA en Transformación Digital (Grupo IOE · 600 h).
+  - Formación en Desarrollo Web Full Stack (ConquerX · en curso).
+  - Especialización en Power BI & Business Intelligence (en curso).
+  - Certificado en Respuesta a Incidentes de Ciberseguridad (IFCT124 · Dabo Consulting).
+  - Técnico Especialista en Administración (FP II).
+- **Proyectos Digitales Aplicados:**
+  - Sistema de digitalización de reservas deportivas con disponibilidad y confirmaciones en tiempo real.
+  - Gestión de inventario y ventas para comercio de alimentación con alertas de stock y visión por IA.
+  - Flujos CRM multicanal y atención al cliente con WhatsApp Business.
+  - Cuadros de mando y analítica con Power BI y Google Sheets.
+  - Aplicación digital "Mi Evento en Casa".
 
 ---
 
@@ -28,128 +31,38 @@ Este proyecto está concebido para presentar la trayectoria profesional de **Lau
 ```text
 Misproyectos/
 │
-├── index.html        # Estructura semántica, contenidos y marcado accesible
-├── style.css         # Hoja de estilos con variables CSS, diseño responsive y animaciones
-├── script.js         # Lógica interactiva, navegación móvil y configuración de usuario
-└── README.md         # Documentación completa y guía de despliegue en GitHub Pages
+├── index.html        # Estructura semántica, accesibilidad ARIA y contenido del CV
+├── style.css         # Diseño ejecutivo responsivo, variables CSS, timeline y animaciones
+├── script.js         # Lógica interactiva, modal de proyectos, WhatsApp y copiado de email
+└── README.md         # Documentación completa y guía de despliegue
 ```
 
 ---
 
-## 🚀 Cómo Visualizar el Proyecto Localmente
+## 🚀 Visualización Local
 
-Para ver y probar la página web en tu propio ordenador:
-
-1. Navega hasta la carpeta del proyecto: `c:\Users\Usuario\Misproyectos`.
-2. Haz **doble clic en el archivo `index.html`**; se abrirá automáticamente en tu navegador habitual (Google Chrome, Microsoft Edge, Firefox, etc.).
-3. *(Opcional para desarrollo)*: Si utilizas Visual Studio Code o extensiones como *Live Server*, puedes hacer clic derecho sobre `index.html` y seleccionar **"Open with Live Server"** para recarga en tiempo real mientras editas.
+1. Abre la carpeta del proyecto en tu ordenador: `c:\Users\Usuario\Misproyectos`.
+2. Haz doble clic en el archivo **`index.html`** para abrirlo en tu navegador preferido (Google Chrome, Microsoft Edge, Firefox, etc.).
+3. No requiere servidores locales, Node.js ni instalación de paquetes adicionales.
 
 ---
 
-## ⚙️ Cómo Personalizar tus Enlaces y Datos de Contacto
+## 🌐 Publicación en GitHub Pages
 
-Toda la configuración principal de enlaces y correo se encuentra centralizada al inicio del archivo [`script.js`](file:///c:/Users/Usuario/Misproyectos/script.js) para que puedas modificarla en cuestión de segundos:
+El sitio web está alojado y publicado gratuitamente a través de **GitHub Pages**:
 
-```javascript
-const USER_CONFIG = {
-  // Tu dirección de correo real
-  email: 'tu-correo-real@ejemplo.com',
-
-  // El enlace a tu perfil de GitHub
-  githubUrl: 'https://github.com/tu-usuario',
-
-  // El enlace a tu perfil de LinkedIn
-  linkedinUrl: 'https://www.linkedin.com/in/lauramarinbarrio',
-
-  // Repositorios de tus proyectos (cuando los tengas listos):
-  projects: {
-    'reservas': {
-      name: 'Sistema digital de reservas deportivas',
-      repoUrl: null, // Sustituye null por 'https://github.com/tu-usuario/nombre-del-repo' cuando esté disponible
-      description: 'Proyecto para gestionar reservas de instalaciones deportivas...'
-    },
-    'inventario': {
-      name: 'Gestión de inventario para comercio',
-      repoUrl: null, // Sustituye null cuando esté listo
-      description: 'Proyecto de digitalización del inventario...'
-    },
-    'mievento': {
-      name: 'Mi Evento en Casa',
-      repoUrl: null, // Sustituye null cuando esté listo
-      description: 'Proyecto de aplicación digital para organizar eventos y menús...'
-    }
-  }
-};
-```
-
-> **Nota:** Mientras el valor de `repoUrl` sea `null` o `'#'`, al pulsar el botón **"Ver proyecto"** se abrirá automáticamente un modal explicativo indicando que el proyecto está actualmente en desarrollo. Una vez que asignes una URL pública válida, el botón abrirá directamente tu repositorio en una nueva pestaña.
+🔗 **Web en vivo:** [https://laura-weka.github.io/Misproyectos/](https://laura-weka.github.io/Misproyectos/)  
+📂 **Repositorio:** [https://github.com/laura-weka/Misproyectos](https://github.com/laura-weka/Misproyectos)
 
 ---
 
-## 🌐 Publicación en GitHub Pages (Paso a Paso)
+## 📞 Datos de Contacto Profesional
 
-Puedes publicar este portafolio completamente gratis utilizando **GitHub Pages** para que cualquier persona o reclutador pueda visitarlo en internet.
-
-### Paso 1: Crear un nuevo repositorio en GitHub
-1. Inicia sesión en [GitHub](https://github.com).
-2. Haz clic en el botón verde **"New"** o dirígete a `https://github.com/new`.
-3. Asigna un nombre al repositorio:
-   - Si deseas que sea tu web personal principal, llámalo: `tu-usuario.github.io`
-   - O bien ponle un nombre general como: `portfolio`
-4. Asegúrate de marcarlo como **Public** (Público).
-5. No marques las casillas de añadir README ni .gitignore (ya los tenemos creados localmente).
-6. Haz clic en **"Create repository"**.
-
-### Paso 2: Subir los archivos desde tu terminal
-Abre PowerShell o tu terminal en la carpeta `c:\Users\Usuario\Misproyectos` y ejecuta:
-
-```powershell
-# 1. Inicializar el repositorio Git local
-git init
-
-# 2. Agregar todos los archivos
-git add .
-
-# 3. Crear el primer commit
-git commit -m "Lanzamiento inicial del portfolio profesional de Laura Marín Barrio"
-
-# 4. Establecer la rama principal
-git branch -M main
-
-# 5. Conectar con tu repositorio remoto de GitHub (reemplaza 'tu-usuario' y 'portfolio')
-git remote add origin https://github.com/tu-usuario/portfolio.git
-
-# 6. Subir los archivos a GitHub
-git push -u origin main
-```
-
-### Paso 3: Activar GitHub Pages
-1. En la página de tu repositorio en GitHub, entra en la pestaña **Settings** (Configuración).
-2. En el menú lateral izquierdo, haz clic en **Pages**.
-3. En la sección **Build and deployment**:
-   - **Source**: Selecciona `Deploy from a branch`.
-   - **Branch**: Selecciona la rama `main` y la carpeta `/ (root)`.
-4. Haz clic en **Save** (Guardar).
-5. Espera entre 1 y 2 minutos. GitHub te proporcionará una URL pública donde tu web estará disponible para todo el mundo (por ejemplo: `https://tu-usuario.github.io/portfolio/`).
-
----
-
-## 📄 Secciones Incluidas
-
-1. **Hero (Principal):** Presentación clara del perfil híbrido: Gestión empresarial + Inteligencia Artificial + Desarrollo Web y Automatización.
-2. **Sobre Mí:** Resumen fiel de trayectoria profesional en gestión de negocios (instalaciones deportivas, hostelería, comercio y alimentación) y evolución hacia tecnologías digitales.
-3. **Habilidades:**
-   - *Inteligencia artificial y automatización* (n8n, IA generativa, Antigravity, prompts).
-   - *Programación y desarrollo* (HTML/CSS/JS en formación, Python, Java/Android, PSeInt, Flutter/Firebase, SQL).
-   - *Datos y herramientas* (Excel avanzado, Google Sheets, Power BI/Query, RStudio).
-   - *Gestión empresarial* (Dirección, equipos, inventarios, atención al cliente, Scrum/Kanban).
-   - *Ciberseguridad* (Seguridad informática, Linux, redes, protección de datos).
-4. **Proyectos:**
-   - *Sistema digital de reservas deportivas*
-   - *Gestión de inventario para comercio*
-   - *Mi Evento en Casa*
-5. **Formación:** Diferenciación precisa entre formación en curso (ConquerX) y especializaciones completadas (IA aplicada, Ciberseguridad, PSeInt y herramientas de análisis).
-6. **Contacto:** Canales directos configurables para correo electrónico, GitHub y LinkedIn.
+- **Ubicación:** Vejer de la Frontera (Cádiz), España
+- **Teléfono / WhatsApp:** 650 411 664
+- **Correo Electrónico:** grupomala@hotmail.com
+- **LinkedIn:** [linkedin.com/in/lauramarinbarrio](https://www.linkedin.com/in/lauramarinbarrio)
+- **GitHub:** [github.com/laura-weka](https://github.com/laura-weka)
 
 ---
 

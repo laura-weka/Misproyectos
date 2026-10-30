@@ -3,30 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Laura Marín Barrio</title>
+  <title>Laura Marín Barrio | Gestión de Operaciones, IA &amp; Automatización</title>
   
-  <!-- Meta etiquetas SEO y redes sociales -->
-  <meta name="description" content="Portfolio profesional de Laura Marín Barrio. Gestión empresarial, Inteligencia Artificial, Desarrollo Web y Automatización de procesos.">
+  <!-- SEO & Redes Sociales -->
+  <meta name="description" content="Portfolio profesional de Laura Marín Barrio. Gestión de operaciones, administración digital, automatización de procesos con IA y desarrollo web en Vejer de la Frontera (Cádiz).">
   <meta name="author" content="Laura Marín Barrio">
-  <meta property="og:title" content="Portfolio | Laura Marín Barrio">
-  <meta property="og:description" content="Combinando experiencia en gestión empresarial con nuevas competencias tecnológicas para crear soluciones digitales prácticas y eficientes.">
+  <meta name="keywords" content="Laura Marín Barrio, Gestión de Operaciones, Automatización, Inteligencia Artificial, n8n, Power BI, Desarrollo Web, Pymes, Cádiz">
+  
+  <meta property="og:title" content="Laura Marín Barrio | Gestión de Operaciones · Automatización e IA">
+  <meta property="og:description" content="Combinando años de dirección empresarial con IA, automatización y desarrollo digital para crear soluciones eficientes en pymes.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://laura-weka.github.io/Misproyectos/">
 
-  <!-- Tipografía Google Fonts: Plus Jakarta Sans -->
+  <!-- Tipografía Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Hoja de estilos principal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Barra de Navegación Principal -->
   <header class="header" id="navbar">
     <div class="container nav-container">
-      <a href="#inicio" class="logo" aria-label="Ir al inicio - Laura Marín Barrio">
+      <a href="#inicio" class="logo" aria-label="Inicio - Laura Marín Barrio">
         <span class="logo-mark">LM</span>
-        <span class="logo-text">Laura Marín Barrio</span>
+        <div class="logo-info">
+          <span class="logo-text">Laura Marín Barrio</span>
+          <span class="logo-subtext">Operaciones &amp; IA</span>
+        </div>
       </a>
 
       <!-- Menú de navegación de escritorio -->
@@ -34,10 +41,11 @@
         <ul class="nav-list">
           <li><a href="#inicio" class="nav-link active">Inicio</a></li>
           <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
-          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
           <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
           <li><a href="#formacion" class="nav-link">Formación</a></li>
-          <li><a href="#contacto" class="nav-link nav-link-btn">Contacto</a></li>
+          <li><a href="#contacto" class="nav-link nav-link-btn">Contactar</a></li>
         </ul>
       </nav>
 
@@ -54,111 +62,169 @@
     <!-- 1. SECCIÓN HERO (PÁGINA PRINCIPAL) -->
     <section class="hero-section" id="inicio">
       <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+
       <div class="container hero-container">
-        
         <div class="hero-content">
+          
           <div class="hero-badge">
             <span class="badge-dot"></span>
-            <span>Perfil Profesional &amp; Tecnológico</span>
+            <span>Gestión de Operaciones · Administración Digital · IA</span>
           </div>
 
           <h1 class="hero-name">Laura Marín Barrio</h1>
           
-          <h2 class="hero-title">
-            Gestión empresarial <span class="divider">|</span> 
-            Inteligencia Artificial <span class="divider">|</span> 
-            Desarrollo Web y Automatización
-          </h2>
-
-          <p class="hero-description">
-            Combinando años de experiencia en gestión empresarial con nuevas competencias tecnológicas para crear soluciones digitales prácticas y eficientes.
+          <p class="hero-tagline">
+            Dirección operativa de negocios impulsada por 
+            <span class="highlight-text">Inteligencia Artificial</span>, 
+            <span class="highlight-text">Automatización</span> y 
+            <span class="highlight-text">Soluciones Digitales</span>.
           </p>
 
+          <p class="hero-description">
+            Especializada en transformar y optimizar la gestión de pymes: reservas, atención al cliente, administración, inventarios y control operativo, combinando años de experiencia en liderazgo con herramientas tecnológicas prácticas.
+          </p>
+
+          <!-- Pastillas de información rápida -->
+          <div class="hero-pills">
+            <div class="info-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pill-icon">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Vejer de la Frontera, Cádiz</span>
+            </div>
+
+            <a href="mailto:grupomala@hotmail.com" class="info-pill clickable">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pill-icon">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>grupomala@hotmail.com</span>
+            </a>
+
+            <a href="https://wa.me/34650411664" target="_blank" rel="noopener noreferrer" class="info-pill clickable">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pill-icon">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>650 411 664</span>
+            </a>
+          </div>
+
+          <!-- Botones de Acción -->
           <div class="hero-cta-group">
             <a href="#proyectos" class="btn btn-primary">
-              <span>Ver proyectos</span>
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <span>Ver proyectos aplicados</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="5" x2="12" y2="19"></line>
                 <polyline points="19 12 12 19 5 12"></polyline>
               </svg>
             </a>
 
-            <a href="#contacto" class="btn btn-secondary">
-              <span>Contactar</span>
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
+            <a href="https://wa.me/34650411664?text=Hola%20Laura,%20he%20visto%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20contactar%20contigo" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.12 8.12 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.74 2.65 4.21 3.72.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/>
               </svg>
+              <span>WhatsApp Directo</span>
+            </a>
+
+            <a href="#experiencia" class="btn btn-secondary">
+              <span>Experiencia &amp; CV</span>
             </a>
           </div>
 
-          <!-- Puntos destacados rápidos -->
+          <!-- Métricas de Impacto -->
           <div class="hero-stats">
             <div class="stat-item">
-              <span class="stat-label">Enfoque</span>
-              <span class="stat-value">Empresa + Tecnología</span>
+              <span class="stat-number">+8 años</span>
+              <span class="stat-label">Dirección &amp; Operaciones</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <span class="stat-label">Especialidad</span>
-              <span class="stat-value">IA, Procesos &amp; Web</span>
+              <span class="stat-number">IA &amp; n8n</span>
+              <span class="stat-label">Automatización Aplicada</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <span class="stat-label">Estado</span>
-              <span class="stat-value text-accent">En formación continua</span>
+              <span class="stat-number">Máster + MBA</span>
+              <span class="stat-label">Formación Avanzada</span>
             </div>
           </div>
+
         </div>
 
-        <!-- Diseño visual interactivo tech / AI -->
-        <div class="hero-visual" aria-hidden="true">
-          <div class="tech-card-wrapper">
-            <div class="tech-window">
-              <div class="tech-window-header">
-                <div class="window-dots">
-                  <span class="dot dot-red"></span>
-                  <span class="dot dot-yellow"></span>
-                  <span class="dot dot-green"></span>
+        <!-- Tarjeta Ejecutiva Interactiva -->
+        <div class="hero-visual">
+          <div class="executive-card">
+            <div class="card-glass-header">
+              <div class="badge-active">
+                <span class="pulse-indicator"></span>
+                <span>Disponible para nuevos proyectos</span>
+              </div>
+              <span class="card-loc">Cádiz · Remoto</span>
+            </div>
+
+            <div class="card-main-info">
+              <div class="avatar-box">
+                <span class="avatar-initials">LM</span>
+              </div>
+              <div>
+                <h3 class="card-profile-name">Laura Marín Barrio</h3>
+                <p class="card-profile-role">Gestión de Operaciones &amp; Transformación Digital</p>
+              </div>
+            </div>
+
+            <div class="card-focus-list">
+              <div class="focus-item">
+                <div class="focus-icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
                 </div>
-                <div class="window-title">laura-marin-perfil.json</div>
+                <div>
+                  <span class="focus-title">Operaciones de Negocio</span>
+                  <span class="focus-desc">Reservas, clientes, equipos, existencias y proveedores.</span>
+                </div>
               </div>
-              <div class="tech-window-body">
-                <pre class="code-block"><code><span class="code-key">"profesional"</span>: <span class="code-str">"Laura Marín Barrio"</span>,
-<span class="code-key">"misión"</span>: <span class="code-str">"Optimizar procesos con IA &amp; Web"</span>,
-<span class="code-key">"competencias"</span>: [
-  <span class="code-str">"Gestión de negocios"</span>,
-  <span class="code-str">"Inteligencia Artificial"</span>,
-  <span class="code-str">"Automatización con n8n"</span>,
-  <span class="code-str">"Desarrollo Full Stack"</span>
-],
-<span class="code-key">"disponibilidad"</span>: <span class="code-val">"Oportunidades laborales"</span></code></pre>
+
+              <div class="focus-item">
+                <div class="focus-icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <div>
+                  <span class="focus-title">Automatizaciones con IA</span>
+                  <span class="focus-desc">n8n, Google Apps Script, ChatGPT, Claude y Antigravity.</span>
+                </div>
+              </div>
+
+              <div class="focus-item">
+                <div class="focus-icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="focus-title">Desarrollo Web &amp; Datos</span>
+                  <span class="focus-desc">Power BI, Google Sheets, HTML, CSS, JavaScript y bases de datos.</span>
+                </div>
               </div>
             </div>
 
-            <!-- Badges flotantes interactivos -->
-            <div class="floating-badge badge-1">
-              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
-                <path d="M12 12L2.1 12a10.1 10.1 0 0 0 9.9 9.9"></path>
-              </svg>
-              <span>Gestión &amp; Procesos</span>
-            </div>
-
-            <div class="floating-badge badge-2">
-              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-              </svg>
-              <span>IA &amp; Automatización</span>
-            </div>
-
-            <div class="floating-badge badge-3">
-              <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-              <span>Desarrollo Web</span>
+            <!-- Terminal interactiva simulada -->
+            <div class="mini-console">
+              <div class="console-header">
+                <span class="console-dot dot-1"></span>
+                <span class="console-dot dot-2"></span>
+                <span class="console-dot dot-3"></span>
+                <span class="console-title">objetivo_profesional.sh</span>
+              </div>
+              <div class="console-body">
+                <code><span class="c-accent">&gt;</span> <span class="c-text">Optimizar procesos con IA y tecnología para hacer crecer pymes.</span></code>
+              </div>
             </div>
           </div>
         </div>
@@ -166,304 +232,89 @@
       </div>
     </section>
 
-    <!-- 2. SECCIÓN SOBRE MÍ -->
+    <!-- 2. SECCIÓN SOBRE MÍ & PROPUESTA DE VALOR -->
     <section class="section about-section" id="sobre-mi">
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Conóceme</span>
-          <h2 class="section-title">Sobre Mí</h2>
+          <span class="section-tag">Perfil Profesional</span>
+          <h2 class="section-title">Sobre Mí &amp; Propuesta de Valor</h2>
+          <p class="section-subtitle">
+            El puente entre la gestión empresarial real del día a día y la tecnología moderna.
+          </p>
           <div class="section-line"></div>
         </div>
 
         <div class="about-grid">
+          
           <div class="about-card-main">
             <div class="about-quote-mark" aria-hidden="true">“</div>
             <p class="about-lead">
-              Soy una profesional con amplia experiencia en dirección y gestión de negocios, organización de equipos, atención al cliente, administración, control de inventarios y optimización de procesos.
+              Profesional con amplia experiencia en dirección de pequeños negocios y gestión de operaciones, atención al cliente, administración, coordinación de equipos, reservas, incidencias, proveedores y control operativo.
             </p>
             <p class="about-text">
-              He desarrollado mi trayectoria profesional en distintos sectores, especialmente en la <strong>gestión de instalaciones deportivas, comercio, hostelería y alimentación</strong>.
+              Especializada en la <strong>aplicación práctica de herramientas digitales, automatización de procesos e inteligencia artificial</strong> para mejorar la organización interna y la eficiencia de los negocios.
             </p>
             <p class="about-text">
-              Actualmente estoy ampliando mi formación en <strong>desarrollo web, programación, inteligencia artificial, automatización de procesos y ciberseguridad</strong>.
+              He desarrollado mi trayectoria dirigiendo instalaciones deportivas, supermercados, hostelería y comercios, viviendo en primera persona las necesidades de las pymes y la importancia de agilizar tareas repetitivas.
             </p>
-            <p class="about-text about-highlight">
-              Mi objetivo es combinar mis conocimientos empresariales con las nuevas tecnologías para desarrollar soluciones digitales útiles y continuar mi trayectoria profesional en el sector tecnológico.
-            </p>
+            <div class="about-highlight-box">
+              <h4 class="highlight-title">Interesada activamente en:</h4>
+              <p class="highlight-desc">
+                Proyectos de transformación digital, operaciones y back office, Customer Success, soporte CRM, marketing digital y automatización e IA para pymes.
+              </p>
+            </div>
           </div>
 
           <!-- Pilares de valor profesional -->
           <div class="about-pillars">
+            
             <div class="pillar-card">
-              <div class="pillar-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                </svg>
-              </div>
-              <div class="pillar-content">
-                <h3 class="pillar-title">Visión Práctica de Negocio</h3>
-                <p class="pillar-desc">Comprensión profunda de las operaciones cotidianas, gestión de equipos, control financiero y resolución orientada a resultados reales.</p>
-              </div>
-            </div>
-
-            <div class="pillar-card">
-              <div class="pillar-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                </svg>
-              </div>
-              <div class="pillar-content">
-                <h3 class="pillar-title">Digitalización &amp; Automatización</h3>
-                <p class="pillar-desc">Capacidad para identificar cuellos de botella y crear flujos automatizados con IA y herramientas modernas que ahorran tiempo y errores.</p>
-              </div>
-            </div>
-
-            <div class="pillar-card">
-              <div class="pillar-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                </svg>
-              </div>
-              <div class="pillar-content">
-                <h3 class="pillar-title">Formación Continua</h3>
-                <p class="pillar-desc">Compromiso firme con el aprendizaje técnico diario, metodologías ágiles y constante actualización en el ecosistema digital.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 3. SECCIÓN HABILIDADES -->
-    <section class="section skills-section" id="habilidades">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-tag">Competencias</span>
-          <h2 class="section-title">Habilidades</h2>
-          <p class="section-subtitle">Conjunto de competencias técnicas, herramientas digitales y capacidades de gestión empresarial.</p>
-          <div class="section-line"></div>
-        </div>
-
-        <div class="skills-grid">
-          
-          <!-- Tarjeta 1: Inteligencia Artificial y Automatización -->
-          <div class="skill-category-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon icon-ai">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
-                </svg>
-              </div>
-              <div>
-                <h3 class="skill-category-title">Inteligencia artificial y automatización</h3>
-                <span class="skill-count">6 áreas clave</span>
-              </div>
-            </div>
-            <ul class="skill-items-list">
-              <li>
-                <span class="bullet"></span>
-                <span>Inteligencia artificial aplicada al trabajo.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Herramientas de IA generativa.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Automatizaciones con n8n.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Google Antigravity.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Diseño de prompts.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Integración de herramientas digitales.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Tarjeta 2: Programación y Desarrollo -->
-          <div class="skill-category-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon icon-dev">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-              <div>
-                <h3 class="skill-category-title">Programación y desarrollo</h3>
-                <span class="skill-count">7 áreas de formación</span>
-              </div>
-            </div>
-            <ul class="skill-items-list">
-              <li>
-                <span class="bullet"></span>
-                <span>HTML, CSS y JavaScript <span class="badge-subtle">en formación</span></span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Python básico.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Java y Android Studio.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>PSeInt y lógica de programación.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Flutter y Firebase <span class="badge-subtle">conocimientos iniciales</span></span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>SQL básico.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Desarrollo de aplicaciones.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Tarjeta 3: Datos y Herramientas -->
-          <div class="skill-category-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon icon-data">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="18" y1="20" x2="18" y2="10"></line>
-                  <line x1="12" y1="20" x2="12" y2="4"></line>
-                  <line x1="6" y1="20" x2="6" y2="14"></line>
-                </svg>
-              </div>
-              <div>
-                <h3 class="skill-category-title">Datos y herramientas</h3>
-                <span class="skill-count">6 herramientas</span>
-              </div>
-            </div>
-            <ul class="skill-items-list">
-              <li>
-                <span class="bullet"></span>
-                <span>Excel avanzado.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Google Sheets.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Power BI y Power Query <span class="badge-subtle">conocimientos</span></span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>RStudio.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Análisis de datos.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Visualización de información.</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Tarjeta 4: Gestión Empresarial -->
-          <div class="skill-category-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon icon-business">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <div class="pillar-icon-box icon-biz">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                   <circle cx="9" cy="7" r="4"></circle>
                   <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                   <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
-              <div>
-                <h3 class="skill-category-title">Gestión empresarial</h3>
-                <span class="skill-count">7 competencias clave</span>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Visión Real de Negocio</h3>
+                <p class="pillar-desc">
+                  Comprensión integral de cuentas, clientes, proveedores, equipo humano y operaciones cotidianas con foco en rentabilidad y resolución.
+                </p>
               </div>
             </div>
-            <ul class="skill-items-list">
-              <li>
-                <span class="bullet"></span>
-                <span>Dirección y organización de negocios.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Gestión de equipos.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Administración y planificación.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Gestión de inventarios y pedidos.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Atención al cliente.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Transformación digital.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Metodologías ágiles: Scrum y Kanban.</span>
-              </li>
-            </ul>
-          </div>
 
-          <!-- Tarjeta 5: Ciberseguridad -->
-          <div class="skill-category-card">
-            <div class="skill-card-header">
-              <div class="skill-card-icon icon-security">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <div class="pillar-card">
+              <div class="pillar-icon-box icon-ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                  <path d="M12 12L2.1 12a10.1 10.1 0 0 0 9.9 9.9"></path>
                 </svg>
               </div>
-              <div>
-                <h3 class="skill-category-title">Ciberseguridad</h3>
-                <span class="skill-count">5 áreas fundamentales</span>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Automatización Práctica &amp; IA</h3>
+                <p class="pillar-desc">
+                  Implementación de flujos con n8n, Google Apps Script e IA generativa que eliminan fricciones, ahorran horas de trabajo y reducen errores manuales.
+                </p>
               </div>
             </div>
-            <ul class="skill-items-list">
-              <li>
-                <span class="bullet"></span>
-                <span>Fundamentos de seguridad informática.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Introducción a Linux.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Conceptos de redes.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Buenas prácticas de protección de datos.</span>
-              </li>
-              <li>
-                <span class="bullet"></span>
-                <span>Formación en ciberseguridad.</span>
-              </li>
-            </ul>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box icon-client">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Atención &amp; Customer Success</h3>
+                <p class="pillar-desc">
+                  Gestión multicanal (WhatsApp Business, email, chat) orientada a la fidelización, resolución inmediata de incidencias y experiencia del usuario.
+                </p>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -471,117 +322,288 @@
       </div>
     </section>
 
-    <!-- 4. SECCIÓN PROYECTOS -->
+    <!-- 3. SECCIÓN EXPERIENCIA PROFESIONAL (DEL CV REAL) -->
+    <section class="section experience-section" id="experiencia">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Trayectoria</span>
+          <h2 class="section-title">Experiencia Profesional</h2>
+          <p class="section-subtitle">
+            Años de liderazgo operativo en empresas reales, gestionando personas, instalaciones y digitalización.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- Experiencia 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-period">Septiembre de 2016 – Actualidad</span>
+                  <h3 class="timeline-role">Directora y Gestora de Operaciones</h3>
+                  <h4 class="timeline-company">Centro Deportivo Liceo · San Fernando, Cádiz</h4>
+                </div>
+                <span class="status-badge-active">Puesto Actual</span>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Gestión integral de clientes, reservas, cobros, personal, proveedores e incidencias.</li>
+                <li>Organización de instalaciones, servicios, eventos y atención ágil por canales digitales.</li>
+                <li>Diseño y mejora del sistema de reservas y controles administrativos internos; coordinación de equipos y seguimiento de la calidad del servicio.</li>
+                <li><strong>Aplicación de herramientas de IA, automatización y soluciones no-code</strong> para digitalizar procesos tradicionales y optimizar la ocupación de pistas.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experiencia 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-period">Junio de 2021 – Actualidad</span>
+                  <h3 class="timeline-role">Directora y Gestora</h3>
+                  <h4 class="timeline-company">Supermercado Los Chiclaneros · Vejer, Cádiz</h4>
+                </div>
+                <span class="status-badge-active">Puesto Actual</span>
+              </div>
+              <ul class="timeline-responsibilities">
+                <li>Gestión operativa integral del establecimiento: atención al público, pedidos, caja, existencias y proveedores.</li>
+                <li>Organización administrativa rigurosa, control continuo de necesidades de stock y coordinación diaria del equipo de trabajo.</li>
+                <li>Supervisión de compras, reposición eficiente y optimización de márgenes comerciales.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experiencia 3 (Agrupada de Dirección & Comercio) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <span class="timeline-period">Trayectoria Previa</span>
+                  <h3 class="timeline-role">Dirección, Gestión Comercial y Responsable de Operaciones</h3>
+                  <h4 class="timeline-company">Sectores: Educación, Comercio Minorista y Hostelería · Cádiz</h4>
+                </div>
+              </div>
+              <div class="sub-experience-grid">
+                <div class="sub-exp-box">
+                  <h5 class="sub-exp-title">Directora — Actividades Extraescolares</h5>
+                  <p class="sub-exp-desc">Planificación de servicios, coordinación de equipos educativos y relación directa con centros escolares.</p>
+                </div>
+                <div class="sub-exp-box">
+                  <h5 class="sub-exp-title">Propietaria — Mercería, Papelería y Copistería</h5>
+                  <p class="sub-exp-desc">Gestión autónoma del negocio, control de ventas, facturación, atención al cliente y pedidos a proveedores.</p>
+                </div>
+                <div class="sub-exp-box">
+                  <h5 class="sub-exp-title">Responsable de Sección / Encargada</h5>
+                  <p class="sub-exp-desc">Supervisión de personal, cuadre de caja, gestión de stock, normas de seguridad alimentaria y atención al cliente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SECCIÓN PROYECTOS APLICADOS -->
     <section class="section projects-section" id="proyectos">
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Portafolio</span>
-          <h2 class="section-title">Proyectos</h2>
-          <p class="section-subtitle">Iniciativas digitales orientadas a solucionar problemas reales de gestión, organización y digitalización.</p>
+          <span class="section-tag">Soluciones Digitales</span>
+          <h2 class="section-title">Proyectos Aplicados</h2>
+          <p class="section-subtitle">
+            Iniciativas prácticas que resuelven problemas reales de reservas, inventario, flujos de clientes y analítica.
+          </p>
           <div class="section-line"></div>
         </div>
 
         <div class="projects-grid">
           
-          <!-- Proyecto 1 -->
-          <article class="project-card">
+          <!-- Proyecto 1: Reservas Deportivas -->
+          <article class="project-card featured-project">
             <div class="project-header">
               <div class="project-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                   <line x1="16" y1="2" x2="16" y2="6"></line>
                   <line x1="8" y1="2" x2="8" y2="6"></line>
                   <line x1="3" y1="10" x2="21" y2="10"></line>
                 </svg>
               </div>
-              <span class="status-badge in-progress" title="Proyecto actualmente en fase de construcción">
+              <span class="status-badge in-production">
                 <span class="status-dot"></span>
-                En desarrollo
+                Aplicado en negocio real
               </span>
             </div>
 
             <div class="project-body">
-              <h3 class="project-title">Sistema digital de reservas deportivas</h3>
+              <h3 class="project-title">Sistema Digital de Reservas Deportivas</h3>
               <p class="project-description">
-                Desarrollo de un proyecto para gestionar reservas de instalaciones deportivas, con selección de fecha, horarios, pistas disponibles y organización de reservas.
+                Solución integral para gestionar la reserva de instalaciones y pistas deportivas. Permite selección dinámica de fechas, franjas horarias, control de disponibilidad en tiempo real, registro de usuarios y recordatorios automáticos.
               </p>
 
               <div class="tech-stack">
-                <span class="tech-tag">Java</span>
-                <span class="tech-tag">Android Studio</span>
-                <span class="tech-tag">Flutter</span>
-                <span class="tech-tag">Firebase</span>
                 <span class="tech-tag">Google Sheets</span>
-                <span class="tech-tag">Automatizaciones</span>
+                <span class="tech-tag">Formularios</span>
+                <span class="tech-tag">n8n</span>
+                <span class="tech-tag">Google Apps Script</span>
+                <span class="tech-tag">Flutter / Firebase (en desarrollo)</span>
               </div>
             </div>
 
             <div class="project-footer">
-              <!-- Para configurar el enlace real en el futuro, cambia el href por tu URL de GitHub o Demo -->
-              <a href="#" class="btn btn-outline btn-project" data-project-id="reservas" data-project-name="Sistema digital de reservas deportivas" aria-label="Ver detalles de Sistema digital de reservas deportivas">
-                <span>Ver proyecto</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+              <button type="button" class="btn btn-outline btn-project" data-project-id="reservas" data-project-name="Sistema Digital de Reservas Deportivas">
+                <span>Ver detalles del proyecto</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </a>
+              </button>
             </div>
           </article>
 
-          <!-- Proyecto 2 -->
+          <!-- Proyecto 2: Gestión de Inventario para Comercio -->
           <article class="project-card">
             <div class="project-header">
               <div class="project-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                   <line x1="3" y1="6" x2="21" y2="6"></line>
                   <path d="M16 10a4 4 0 0 1-8 0"></path>
                 </svg>
               </div>
-              <span class="status-badge in-progress" title="Proyecto actualmente en fase de construcción">
+              <span class="status-badge in-progress">
                 <span class="status-dot"></span>
-                En desarrollo
+                Prototipo funcional
               </span>
             </div>
 
             <div class="project-body">
-              <h3 class="project-title">Gestión de inventario para comercio</h3>
+              <h3 class="project-title">Gestión de Inventario y Ventas para Comercio</h3>
               <p class="project-description">
-                Proyecto de digitalización del inventario de una tienda de alimentación, orientado al registro de productos, control de existencias, seguimiento de ventas y preparación de pedidos.
+                Digitalización del catálogo y existencias de tienda de alimentación. Registro ágil de productos, control de alertas por rotura de stock, preparación asistida de pedidos a proveedores e integración con visión por IA a partir de imágenes de albaranes.
               </p>
 
               <div class="tech-stack">
                 <span class="tech-tag">Inteligencia Artificial</span>
                 <span class="tech-tag">Google Sheets</span>
                 <span class="tech-tag">Automatización</span>
+                <span class="tech-tag">Procesamiento de imágenes</span>
               </div>
             </div>
 
             <div class="project-footer">
-              <a href="#" class="btn btn-outline btn-project" data-project-id="inventario" data-project-name="Gestión de inventario para comercio" aria-label="Ver detalles de Gestión de inventario para comercio">
-                <span>Ver proyecto</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+              <button type="button" class="btn btn-outline btn-project" data-project-id="inventario" data-project-name="Gestión de Inventario para Comercio">
+                <span>Ver detalles del proyecto</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </a>
+              </button>
             </div>
           </article>
 
-          <!-- Proyecto 3 -->
+          <!-- Proyecto 3: Flujos CRM & WhatsApp -->
           <article class="project-card">
             <div class="project-header">
               <div class="project-icon-box">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <span class="status-badge in-production">
+                <span class="status-dot"></span>
+                Implementado
+              </span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Flujos de Clientes y CRM Comercial</h3>
+              <p class="project-description">
+                Diseño y estructuración del ciclo de vida del cliente: captación, seguimiento comercial, bases de datos organizadas y atención automatizada mediante WhatsApp Business y formularios sincronizados.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tech-tag">WhatsApp Business</span>
+                <span class="tech-tag">CRM</span>
+                <span class="tech-tag">Google Workspace</span>
+                <span class="tech-tag">Fidelización</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button type="button" class="btn btn-outline btn-project" data-project-id="crm" data-project-name="Flujos de Clientes y CRM Comercial">
+                <span>Ver detalles del proyecto</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Proyecto 4: Cuadros de Mando Power BI -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <span class="status-badge in-progress-blue">
+                <span class="status-dot"></span>
+                En desarrollo
+              </span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Cuadros de Mando y Analítica con Power BI</h3>
+              <p class="project-description">
+                Desarrollo de dashboards visuales para monitorizar ventas periódicas, ocupación de servicios, control de cobros y métricas operativas clave para la toma de decisiones basada en datos.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">Power Query</span>
+                <span class="tech-tag">Excel Avanzado</span>
+                <span class="tech-tag">KPIs de Negocio</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button type="button" class="btn btn-outline btn-project" data-project-id="bi" data-project-name="Cuadros de Mando con Power BI">
+                <span>Ver detalles del proyecto</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Proyecto 5: Mi Evento en Casa -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                   <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                   <line x1="12" y1="22.08" x2="12" y2="12"></line>
                 </svg>
               </div>
-              <span class="status-badge in-progress" title="Proyecto actualmente en fase de construcción">
+              <span class="status-badge in-progress">
                 <span class="status-dot"></span>
                 En desarrollo
               </span>
@@ -590,24 +612,64 @@
             <div class="project-body">
               <h3 class="project-title">Mi Evento en Casa</h3>
               <p class="project-description">
-                Proyecto de aplicación digital para organizar eventos y menús, consultar recetas, gestionar ingredientes y facilitar la planificación de celebraciones.
+                Aplicación digital orientada a organizar eventos y menús familiares o corporativos, consulta inteligente de recetas, escalado automático de ingredientes y lista de compra asistida por IA.
               </p>
 
               <div class="tech-stack">
-                <span class="tech-tag">Desarrollo Web</span>
+                <span class="tech-tag">Desarrollo Web Full Stack</span>
                 <span class="tech-tag">Inteligencia Artificial</span>
+                <span class="tech-tag">JavaScript</span>
               </div>
             </div>
 
             <div class="project-footer">
-              <a href="#" class="btn btn-outline btn-project" data-project-id="mievento" data-project-name="Mi Evento en Casa" aria-label="Ver detalles de Mi Evento en Casa">
-                <span>Ver proyecto</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+              <button type="button" class="btn btn-outline btn-project" data-project-id="mievento" data-project-name="Mi Evento en Casa">
+                <span>Ver detalles del proyecto</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </a>
+              </button>
+            </div>
+          </article>
+
+          <!-- Proyecto 6: Automatización Administrativa con n8n -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <span class="status-badge in-production">
+                <span class="status-dot"></span>
+                Automatización Activa
+              </span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Automatización de Tareas Administrativas</h3>
+              <p class="project-description">
+                Conexión de formularios web con hojas de cálculo, envío de emails dinámicos con facturas o confirmaciones, y procesamiento de textos con modelos de IA generativa para clasificación de mensajes.
+              </p>
+
+              <div class="tech-stack">
+                <span class="tech-tag">n8n</span>
+                <span class="tech-tag">IA Generativa</span>
+                <span class="tech-tag">Google Apps Script</span>
+                <span class="tech-tag">Webhooks</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <button type="button" class="btn btn-outline btn-project" data-project-id="n8n" data-project-name="Automatización Administrativa con n8n">
+                <span>Ver detalles del proyecto</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
             </div>
           </article>
 
@@ -616,130 +678,342 @@
       </div>
     </section>
 
-    <!-- 5. SECCIÓN FORMACIÓN -->
-    <section class="section education-section" id="formacion">
+    <!-- 5. SECCIÓN HABILIDADES Y COMPETENCIAS -->
+    <section class="section skills-section" id="habilidades">
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Aprendizaje Continuo</span>
-          <h2 class="section-title">Formación</h2>
-          <p class="section-subtitle">Itinerario formativo en tecnologías emergentes, programación, seguridad y análisis de datos.</p>
+          <span class="section-tag">Competencias</span>
+          <h2 class="section-title">Habilidades &amp; Herramientas</h2>
+          <p class="section-subtitle">
+            Conjunto de competencias de negocio, analítica, desarrollo e inteligencia artificial aplicadas.
+          </p>
           <div class="section-line"></div>
         </div>
 
-        <div class="education-grid">
+        <div class="skills-grid">
           
-          <!-- Formación 1: En curso -->
-          <div class="education-card highlight-card">
-            <div class="education-card-top">
-              <span class="status-badge in-progress-blue">
-                <span class="status-dot"></span>
-                En curso
-              </span>
-              <div class="edu-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
+          <!-- Tarjeta 1: Operaciones y Clientes -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon icon-business">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                 </svg>
               </div>
-            </div>
-            <h3 class="education-title">Formación en desarrollo web Full Stack</h3>
-            <p class="education-institution">ConquerX</p>
-            <p class="education-description">
-              Programa formativo integral orientado al desarrollo de aplicaciones web completas, cubriendo tecnologías frontend, backend, arquitectura y despliegue.
-            </p>
-          </div>
-
-          <!-- Formación 2: Finalizada -->
-          <div class="education-card">
-            <div class="education-card-top">
-              <span class="status-badge completed">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-check">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Finalizada
-              </span>
-              <div class="edu-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M12 16v-4"></path>
-                  <path d="M12 8h.01"></path>
-                </svg>
+              <div>
+                <h3 class="skill-category-title">Operaciones &amp; Clientes</h3>
+                <span class="skill-count">Gestión &amp; Liderazgo</span>
               </div>
             </div>
-            <h3 class="education-title">Inteligencia Artificial Avanzada Aplicada al Puesto de Trabajo</h3>
-            <p class="education-institution">Especialización práctica</p>
-            <p class="education-description">
-              Adopción de modelos de IA, generación de prompts profesionales y automatización de flujos de productividad cotidiana en entornos laborales.
-            </p>
+            <ul class="skill-items-list">
+              <li><span class="bullet"></span><span>Organización administrativa y back office.</span></li>
+              <li><span class="bullet"></span><span>Gestión de reservas e incidencias.</span></li>
+              <li><span class="bullet"></span><span>Atención y fidelización de clientes.</span></li>
+              <li><span class="bullet"></span><span>Coordinación de equipos y personal.</span></li>
+              <li><span class="bullet"></span><span>Gestión de proveedores, stock y pedidos.</span></li>
+              <li><span class="bullet"></span><span>CRM y seguimiento comercial.</span></li>
+              <li><span class="bullet"></span><span>Metodologías ágiles: Scrum y Kanban.</span></li>
+            </ul>
           </div>
 
-          <!-- Formación 3: Finalizada -->
-          <div class="education-card">
-            <div class="education-card-top">
-              <span class="status-badge completed">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-check">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Finalizada
-              </span>
-              <div class="edu-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <!-- Tarjeta 2: Automatización e IA -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon icon-ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
                 </svg>
               </div>
-            </div>
-            <h3 class="education-title">Formación en ciberseguridad</h3>
-            <p class="education-institution">Seguridad y Redes</p>
-            <p class="education-description">
-              Bases de protección de datos personales y corporativos, introducción a administración en Linux y comprensión de protocolos de red.
-            </p>
-          </div>
-
-          <!-- Formación 4: Finalizada -->
-          <div class="education-card">
-            <div class="education-card-top">
-              <span class="status-badge completed">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-check">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Finalizada
-              </span>
-              <div class="edu-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="4 17 10 11 4 5"></polyline>
-                  <line x1="12" y1="19" x2="20" y2="19"></line>
-                </svg>
+              <div>
+                <h3 class="skill-category-title">Automatización &amp; IA</h3>
+                <span class="skill-count">Eficiencia Digital</span>
               </div>
             </div>
-            <h3 class="education-title">Programación, lógica y pseudocódigo con PSeInt</h3>
-            <p class="education-institution">Fundamentos de Programación</p>
-            <p class="education-description">
-              Desarrollo de lógica computacional estructurada, diseño de algoritmos, estructuras de control y resolución sistemática de problemas lógicos.
-            </p>
+            <ul class="skill-items-list">
+              <li><span class="bullet"></span><span>Automatizaciones avanzadas con n8n.</span></li>
+              <li><span class="bullet"></span><span>Google Apps Script e integraciones no-code.</span></li>
+              <li><span class="bullet"></span><span>Modelos de IA: ChatGPT, Claude y Antigravity.</span></li>
+              <li><span class="bullet"></span><span>Ingeniería y diseño de prompts de alta precisión.</span></li>
+              <li><span class="bullet"></span><span>IA aplicada a la optimización de procesos.</span></li>
+              <li><span class="bullet"></span><span>Conexión de herramientas digitales y webhooks.</span></li>
+            </ul>
           </div>
 
-          <!-- Formación 5: Finalizada -->
-          <div class="education-card">
-            <div class="education-card-top">
-              <span class="status-badge completed">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-check">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Finalizada
-              </span>
-              <div class="edu-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Tarjeta 3: Ofimática y Datos -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon icon-data">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="18" y1="20" x2="18" y2="10"></line>
                   <line x1="12" y1="20" x2="12" y2="4"></line>
                   <line x1="6" y1="20" x2="6" y2="14"></line>
                 </svg>
               </div>
+              <div>
+                <h3 class="skill-category-title">Ofimática &amp; Datos</h3>
+                <span class="skill-count">Analítica de Negocio</span>
+              </div>
             </div>
-            <h3 class="education-title">Formación y práctica con herramientas de análisis de datos y automatización</h3>
-            <p class="education-institution">Análisis &amp; Procesos</p>
+            <ul class="skill-items-list">
+              <li><span class="bullet"></span><span>Excel avanzado y fórmulas complejas.</span></li>
+              <li><span class="bullet"></span><span>Google Sheets y Google Workspace.</span></li>
+              <li><span class="bullet"></span><span>Power BI y Power Query <span class="badge-subtle">en curso</span></span></li>
+              <li><span class="bullet"></span><span>Microsoft Office completo.</span></li>
+              <li><span class="bullet"></span><span>Consultas a bases de datos (SQL básico).</span></li>
+              <li><span class="bullet"></span><span>RStudio y visualización de datos.</span></li>
+            </ul>
+          </div>
+
+          <!-- Tarjeta 4: Comunicación, Diseño y Desarrollo -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon icon-dev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Desarrollo &amp; Herramientas</h3>
+                <span class="skill-count">Soluciones Web &amp; Apps</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li><span class="bullet"></span><span>HTML5, CSS3 y JavaScript <span class="badge-subtle">Full Stack</span></span></li>
+              <li><span class="bullet"></span><span>WhatsApp Business y canales de soporte.</span></li>
+              <li><span class="bullet"></span><span>FlutterFlow y Android Studio.</span></li>
+              <li><span class="bullet"></span><span>Python básico y lógica en PSeInt.</span></li>
+              <li><span class="bullet"></span><span>Diseño con Canva para branding comercial.</span></li>
+              <li><span class="bullet"></span><span>Git y control de versiones en GitHub.</span></li>
+            </ul>
+          </div>
+
+          <!-- Tarjeta 5: Ciberseguridad -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-card-icon icon-security">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Ciberseguridad</h3>
+                <span class="skill-count">Protección &amp; Sistemas</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li><span class="bullet"></span><span>Respuesta a Incidentes de Ciberseguridad (IFCT124).</span></li>
+              <li><span class="bullet"></span><span>Fundamentos de seguridad informática en pymes.</span></li>
+              <li><span class="bullet"></span><span>Buenas prácticas en protección de datos (RGPD).</span></li>
+              <li><span class="bullet"></span><span>Introducción y administración básica en Linux.</span></li>
+              <li><span class="bullet"></span><span>Conceptos de redes y conexiones seguras.</span></li>
+            </ul>
+          </div>
+
+          <!-- Tarjeta 6: Áreas de Interés Laboral -->
+          <div class="skill-category-card highlight-category">
+            <div class="skill-card-header">
+              <div class="skill-card-icon icon-target">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Puestos de Interés</h3>
+                <span class="skill-count">Roles Profesionales</span>
+              </div>
+            </div>
+            <div class="interest-chips">
+              <span class="interest-chip">Administración &amp; Back Office</span>
+              <span class="interest-chip">Gestión de Operaciones Digitales</span>
+              <span class="interest-chip">Customer Success &amp; Soporte</span>
+              <span class="interest-chip">Gestión de Reservas e Incidencias</span>
+              <span class="interest-chip">Transformación Digital para PYMES</span>
+              <span class="interest-chip">Automatización e IA Junior</span>
+              <span class="interest-chip">Asistencia de Coordinación</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. SECCIÓN FORMACIÓN ACADÉMICA Y ESPECIALIZACIONES -->
+    <section class="section education-section" id="formacion">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Aprendizaje Continuo</span>
+          <h2 class="section-title">Formación Académica &amp; Másteres</h2>
+          <p class="section-subtitle">
+            Titulación oficial y especialización continua en IA, transformación digital y desarrollo.
+          </p>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Máster TECH -->
+          <div class="education-card highlight-card">
+            <div class="education-card-top">
+              <span class="status-badge master-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="badge-icon-sm">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                </svg>
+                Máster · 60 ECTS
+              </span>
+              <span class="edu-date">Marzo 2024 – Agosto 2025</span>
+            </div>
+            <h3 class="education-title">Máster de Formación Permanente en Inteligencia Artificial</h3>
+            <p class="education-institution">TECH Universidad Tecnológica</p>
             <p class="education-description">
-              Capacitación en modelado y visualización con Excel avanzado, Google Sheets, Power BI, Power Query y n8n para optimizar operaciones.
+              Programa de 60 créditos ECTS centrado en algoritmos de aprendizaje automático, IA generativa, visión por computador y aplicación de modelos avanzados en entornos empresariales.
+            </p>
+          </div>
+
+          <!-- MBA Transformación Digital -->
+          <div class="education-card highlight-card">
+            <div class="education-card-top">
+              <span class="status-badge master-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="badge-icon-sm">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                MBA · 600 h
+              </span>
+              <span class="edu-date">Mayo 2025 – Julio 2025</span>
+            </div>
+            <h3 class="education-title">MBA en Transformación Digital</h3>
+            <p class="education-institution">Grupo IOE</p>
+            <p class="education-description">
+              Especialización ejecutiva en rediseño de modelos de negocio, gestión del cambio digital, automatización de procesos, estrategia corporativa y liderazgo tecnológico.
+            </p>
+          </div>
+
+          <!-- Desarrollo Web Full Stack -->
+          <div class="education-card in-progress-card">
+            <div class="education-card-top">
+              <span class="status-badge in-progress-blue">
+                <span class="status-dot"></span>
+                En Curso
+              </span>
+              <span class="edu-date">Formación Continua</span>
+            </div>
+            <h3 class="education-title">Formación en Desarrollo Web Full Stack</h3>
+            <p class="education-institution">ConquerX</p>
+            <p class="education-description">
+              Adquisición intensiva de competencias en desarrollo frontend y backend: HTML5, CSS3 moderno, JavaScript, arquitecturas de software y despliegue de aplicaciones web.
+            </p>
+          </div>
+
+          <!-- Power BI & BI -->
+          <div class="education-card in-progress-card">
+            <div class="education-card-top">
+              <span class="status-badge in-progress-blue">
+                <span class="status-dot"></span>
+                En Curso
+              </span>
+              <span class="edu-date">Business Intelligence</span>
+            </div>
+            <h3 class="education-title">Power BI y Business Intelligence</h3>
+            <p class="education-institution">Especialización en Analítica</p>
+            <p class="education-description">
+              Modelado de datos relacionales con Power Query, expresiones DAX, diseño de cuadros de mando e informes interactivos orientados a la toma de decisiones.
+            </p>
+          </div>
+
+          <!-- Ciberseguridad IFCT124 -->
+          <div class="education-card">
+            <div class="education-card-top">
+              <span class="status-badge completed">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-icon-sm">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Certificado · 86 h
+              </span>
+              <span class="edu-date">Ago 2025 – Sep 2025</span>
+            </div>
+            <h3 class="education-title">Respuesta a Incidentes de Ciberseguridad (IFCT124)</h3>
+            <p class="education-institution">Grupo Dabo Consulting Empresarial S.L.</p>
+            <p class="education-description">
+              Formación oficial en protocolos de contención ante incidentes, análisis de vulnerabilidades, seguridad en redes e implantación de planes de contingencia.
+            </p>
+          </div>
+
+          <!-- IA aplicada al puesto de trabajo -->
+          <div class="education-card">
+            <div class="education-card-top">
+              <span class="status-badge completed">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-icon-sm">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Finalizada · 150 h
+              </span>
+              <span class="edu-date">2026</span>
+            </div>
+            <h3 class="education-title">IA Avanzada Aplicada al Puesto de Trabajo</h3>
+            <p class="education-institution">Productividad &amp; Automatización</p>
+            <p class="education-description">
+              Implementación de modelos de lenguaje en flujos laborales diarios, optimización documental y automatización de redacción y análisis con IA.
+            </p>
+          </div>
+
+          <!-- IA aplicada a la gestión de procesos -->
+          <div class="education-card">
+            <div class="education-card-top">
+              <span class="status-badge completed">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-icon-sm">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Finalizada
+              </span>
+              <span class="edu-date">Ene 2025 – Jun 2025</span>
+            </div>
+            <h3 class="education-title">IA Aplicada a la Gestión de Procesos</h3>
+            <p class="education-institution">CEAJE</p>
+            <p class="education-description">
+              Optimización de flujos operativos en empresas jóvenes y pymes mediante la integración sistemática de inteligencia artificial en la cadena de valor.
+            </p>
+          </div>
+
+          <!-- FP II Administración -->
+          <div class="education-card">
+            <div class="education-card-top">
+              <span class="status-badge completed">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-icon-sm">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Titulación Oficial
+              </span>
+              <span class="edu-date">Formación Profesional</span>
+            </div>
+            <h3 class="education-title">Técnico Especialista en Administración</h3>
+            <p class="education-institution">Formación Profesional de Segundo Grado (FP II)</p>
+            <p class="education-description">
+              Sólida base en contabilidad, gestión documental, legislación mercantil, fiscalidad básica, correspondencia comercial y administración general.
+            </p>
+          </div>
+
+          <!-- Generación Digital PYMES & Gestión Comercial -->
+          <div class="education-card">
+            <div class="education-card-top">
+              <span class="status-badge completed">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="badge-icon-sm">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Finalizadas · 210 h
+              </span>
+              <span class="edu-date">2026</span>
+            </div>
+            <h3 class="education-title">Programa Generación Digital PYMES &amp; Gestión Comercial</h3>
+            <p class="education-institution">Transformación Empresarial</p>
+            <p class="education-description">
+              Herramientas tecnológicas al servicio de la gestión de clientes, digitalización de comercios y estrategias de crecimiento digital.
             </p>
           </div>
 
@@ -748,44 +1022,75 @@
       </div>
     </section>
 
-    <!-- 6. SECCIÓN CONTACTO -->
+    <!-- 7. SECCIÓN CONTACTO DIRECTO -->
     <section class="section contact-section" id="contacto">
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Hablemos</span>
-          <h2 class="section-title">Contacto</h2>
+          <span class="section-tag">Conexión Profesional</span>
+          <h2 class="section-title">Hablemos de tu Proyecto</h2>
+          <p class="section-subtitle">
+            Abierta a oportunidades en gestión de operaciones, transformación digital, automatización con IA y soporte para pymes.
+          </p>
           <div class="section-line"></div>
         </div>
 
         <div class="contact-card-wrapper">
+          
           <div class="contact-lead-box">
             <p class="contact-statement">
-              "Estoy interesada en participar en proyectos tecnológicos, de automatización, soporte digital, administración y desarrollo de soluciones empresariales. Me encuentro en formación continua y abierta a nuevas oportunidades profesionales."
+              "Combino años de experiencia real gestionando negocios, personas y proveedores con las herramientas tecnológicas más innovadoras para ahorrar tiempo, digitalizar procesos y mejorar resultados."
             </p>
+            <div class="contact-meta-pills">
+              <span>📍 Vejer de la Frontera (Cádiz)</span>
+              <span>·</span>
+              <span>🌐 Modalidad Presencial, Híbrida o Remota</span>
+            </div>
           </div>
 
-          <!-- Canales de contacto configurables -->
           <div class="contact-channels">
             
-            <!-- Canal 1: Correo Electrónico -->
+            <!-- Canal 1: WhatsApp Directo -->
+            <div class="channel-card highlight-channel">
+              <div class="channel-icon-wrapper icon-wa">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.12 8.12 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.74 2.65 4.21 3.72.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.29z"/>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Contacto Rápido</span>
+                <span class="channel-value">650 411 664</span>
+                <span class="channel-note">Llamada o mensaje directo</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://wa.me/34650411664?text=Hola%20Laura,%20he%20visto%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20oportunidad" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  <span>Chat por WhatsApp</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Canal 2: Correo Electrónico -->
             <div class="channel-card">
-              <div class="channel-icon-wrapper">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <div class="channel-icon-wrapper icon-email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </div>
               <div class="channel-info">
                 <span class="channel-label">Correo Electrónico</span>
-                <!-- Configura tu email en el atributo href mailto: y en data-email -->
                 <span class="channel-value" id="display-email">grupomala@hotmail.com</span>
+                <span class="channel-note">Respuesta en menos de 24h</span>
               </div>
               <div class="channel-actions">
-                <a href="mailto:grupomala@hotmail.com" class="btn btn-primary btn-sm" id="btn-mail-link" aria-label="Enviar correo a Laura Marín Barrio">
-                  <span>Contactar por correo</span>
+                <a href="mailto:grupomala@hotmail.com?subject=Contacto%20profesional%20desde%20tu%20Portfolio" class="btn btn-primary btn-sm" id="btn-mail-link">
+                  <span>Enviar correo</span>
                 </a>
-                <button type="button" class="btn btn-outline btn-sm" id="btn-copy-email" aria-label="Copiar dirección de correo electrónico">
+                <button type="button" class="btn btn-outline btn-sm" id="btn-copy-email">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -795,33 +1100,10 @@
               </div>
             </div>
 
-            <!-- Canal 2: GitHub -->
-            <div class="channel-card">
-              <div class="channel-icon-wrapper">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-              </div>
-              <div class="channel-info">
-                <span class="channel-label">Repositorios &amp; Código</span>
-                <span class="channel-value" id="display-github">github.com/laura-weka</span>
-              </div>
-              <div class="channel-actions">
-                <!-- Configura la URL de tu GitHub en el href -->
-                <a href="https://github.com/laura-weka" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="link-github" aria-label="Visitar perfil de GitHub de Laura Marín Barrio">
-                  <span>Abrir GitHub</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
             <!-- Canal 3: LinkedIn -->
             <div class="channel-card">
-              <div class="channel-icon-wrapper">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <div class="channel-icon-wrapper icon-li">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
@@ -830,10 +1112,10 @@
               <div class="channel-info">
                 <span class="channel-label">Red Profesional</span>
                 <span class="channel-value" id="display-linkedin">linkedin.com/in/lauramarinbarrio</span>
+                <span class="channel-note">Conectar y ver recomendaciones</span>
               </div>
               <div class="channel-actions">
-                <!-- Configura la URL de tu perfil de LinkedIn en el href -->
-                <a href="https://www.linkedin.com/in/lauramarinbarrio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="link-linkedin" aria-label="Visitar perfil de LinkedIn de Laura Marín Barrio">
+                <a href="https://www.linkedin.com/in/lauramarinbarrio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="link-linkedin">
                   <span>Abrir LinkedIn</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
                     <line x1="7" y1="17" x2="17" y2="7"></line>
@@ -843,7 +1125,31 @@
               </div>
             </div>
 
+            <!-- Canal 4: GitHub -->
+            <div class="channel-card">
+              <div class="channel-icon-wrapper icon-gh">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="channel-info">
+                <span class="channel-label">Código &amp; Repositorios</span>
+                <span class="channel-value" id="display-github">github.com/laura-weka</span>
+                <span class="channel-note">Código fuente y proyectos</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://github.com/laura-weka" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="link-github">
+                  <span>Abrir GitHub</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
           </div>
+
         </div>
 
       </div>
@@ -853,37 +1159,41 @@
   <!-- Pie de Página (Footer) -->
   <footer class="footer">
     <div class="container footer-container">
-      <div class="footer-brand">
-        <span class="footer-logo">LM</span>
-        <div>
-          <p class="footer-name">Laura Marín Barrio</p>
-          <p class="footer-tagline">Gestión empresarial | IA | Desarrollo Web y Automatización</p>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">LM</span>
+          <div>
+            <p class="footer-name">Laura Marín Barrio</p>
+            <p class="footer-tagline">Gestión de Operaciones · Administración Digital · Automatización e IA</p>
+            <p class="footer-loc">Vejer de la Frontera (Cádiz) · grupomala@hotmail.com</p>
+          </div>
         </div>
-      </div>
 
-      <div class="footer-nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre Mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#formacion">Formación</a>
-        <a href="#contacto">Contacto</a>
+        <div class="footer-nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre Mí</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#formacion">Formación</a>
+          <a href="#contacto">Contacto</a>
+        </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; <span id="current-year"></span> Laura Marín Barrio. Todos los derechos reservados.</p>
-        <p class="footer-subtext">Diseñado para GitHub Pages y publicación web profesional.</p>
+        <p class="footer-subtext">Diseñado para GitHub Pages · Código abierto y optimizado para rendimiento.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Modal Informativo de Proyecto en Desarrollo -->
+  <!-- Modal Informativo de Detalles del Proyecto -->
   <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
     <div class="modal-dialog">
       <div class="modal-header">
-        <div class="modal-badge">
+        <div class="modal-badge" id="modal-badge">
           <span class="status-dot"></span>
-          <span>Proyecto en desarrollo</span>
+          <span id="modal-badge-text">Proyecto Aplicado</span>
         </div>
         <button type="button" class="modal-close" id="modal-close" aria-label="Cerrar ventana">
           &times;
@@ -892,30 +1202,39 @@
       <div class="modal-body">
         <h3 class="modal-title" id="modal-title">Nombre del Proyecto</h3>
         <p class="modal-text" id="modal-desc">
-          Este proyecto se encuentra actualmente en desarrollo y preparación para su publicación en GitHub.
+          Descripción detallada del proyecto y su impacto operativo.
         </p>
+        
+        <div class="modal-tech-box">
+          <span class="modal-tech-label">Herramientas &amp; Enfoque:</span>
+          <div class="tech-stack" id="modal-tech-stack"></div>
+        </div>
+
         <div class="modal-info-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="modal-info-icon">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="12" y1="16" x2="12" y2="12"></line>
             <line x1="12" y1="8" x2="12.01" y2="8"></line>
           </svg>
-          <p>El enlace público al repositorio o demostración interactiva estará disponible próximamente en cuanto se complete la primera versión.</p>
+          <p id="modal-extra-note">
+            Este proyecto forma parte de los procesos de digitalización aplicados en negocios reales o se encuentra en fase activa de prototipado.
+          </p>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary btn-sm" id="modal-close-btn">Entendido</button>
+        <a href="#contacto" class="btn btn-primary btn-sm" id="modal-contact-btn">Consultar sobre esta solución</a>
       </div>
     </div>
   </div>
 
-  <!-- Notificación Toast para feedback de acciones (ej: Copiar correo) -->
+  <!-- Notificación Toast para feedback de acciones -->
   <div class="toast-notification" id="toast" role="status" aria-live="polite" aria-hidden="true">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="toast-icon">
       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
       <polyline points="22 4 12 14.01 9 11.01"></polyline>
     </svg>
-    <span class="toast-message" id="toast-message">¡Copiado con éxito!</span>
+    <span class="toast-message" id="toast-message">Copiado con éxito</span>
   </div>
 
   <!-- Botón Volver Arriba -->
@@ -929,4 +1248,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
